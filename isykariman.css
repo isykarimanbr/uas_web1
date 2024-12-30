@@ -1,0 +1,56 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+        .w3-bar-block .w3-bar-item {padding:20px}
+
+.w3-main {
+    max-width: 100%; /* Mengatur lebar maksimum menjadi 100% */
+    width: 100%; /* Mengisi ruang yang tersedia */
+    margin: 0 auto; /* Mengatur margin otomatis untuk pusat */
+    overflow: auto;
+}
+
+/* Gaya umum untuk iklan mobil */
+.iklan-mobil {
+background-color: rgba(241, 241, 241, 0.8); /* Warna latar belakang dengan transparansi */
+padding: 20px; /* Jarak dalam */
+margin: 20px 0; /* Jarak luar */
+text-align: center; /* Teks di tengah */
+background-image: url('img/iklan.jpg'); /* Gambar latar belakang */
+background-size: cover; /* Menyesuaikan ukuran gambar */
+background-position: center; /* Memusatkan gambar */
+color: white; /* Warna teks */
+font-weight: bold;
+}
+h3.iklan-mobil{
+    font-weight: bold;
+}
+
+/* Media query untuk perangkat kecil (mobile) */
+@media only screen and (max-width: 600px) {
+.iklan-mobil {
+    font-size: 14px; /* Ukuran font lebih kecil */
+    padding: 10px; /* Jarak dalam lebih kecil */
+}
+}
+/* Media query untuk perangkat sedang (tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+.iklan-mobil {
+    font-size: 16px; /* Ukuran font sedang */
+    padding: 15px; /* Jarak dalam sedang */
+}
+
+}
+/* Media query untuk perangkat besar (desktop) */
+
+@media only screen and (min-width: 1025px) {
+.iklan-mobil {
+    font-size: 18px; /* Ukuran font lebih besar */
+    padding: 20px; /* Jarak dalam lebih besar */
+}
+}
+
+@media screen and (max-width: 600px) {
+    .w3-third {
+        width: 100%; /* Set to full width on small screens */
+    }
+}
+

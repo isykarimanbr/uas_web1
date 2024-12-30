@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UNPAM Car - Etalase</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="isykariman.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <!-- Menambahkan Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Tutup Menu</a>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="profil.html" class="w3-bar-item w3-button">Profil</a>
+    <a href="etalase.html" class="w3-bar-item w3-button">Transaksi</a>
+    <a href="login.html" class="w3-bar-item w3-button">Login</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+    <div class="w3-gray w3-xlarge" style="max-width:100%; margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">&#9776;</div>
+        <div class="w3-left w3-padding-16"><img src="img/logo.png" alt="Logo UNPAM"></div>
+        <div class="w3-right w3-padding-8"> <a href="daftar.html" class="w3-button w3-gray">Daftar</a></div>
+        <div class="w3-center w3-padding-16"> <a href="index.html">UNPAM Car</a></div>
+    </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:100%; margin-top:100px">
+
+    <div class="iklan-mobil">
+        <h3>Promo UNPAM Car!</h3>
+        <p>Sewa Mclaren sekarang dan dapatkan diskon 20%!</p>
+    </div>
+
+<!-- Placeholder Pencarian Menu -->
+<div class="w3-container w3-padding-16">
+    <h3>Cari Mclaren</h3>
+    <input type="text" id="searchInput" placeholder="Masukkan Mclaren yang ingin kamu booking..." class="w3-input w3-border">
+    <button onclick="searchCar()" class="w3-button w3-black">Cari</button>
+</div>
+    
+<!-- Etalase Section -->
+<div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/mclaren1.webp" alt="McLaren 720S" style="width:100%">
+            <div class="w3-container">
+                <h3>McLaren 720S</h3>
+                <p>Spesifikasi:</p>
+                <ul>
+                    <li>Mesin: 4.0L V8 Twin-Turbo</li>
+                    <li>Daya: 720 hp</li>
+                    <li>0-100 km/h: 2.7 detik</li>
+                    <li>Biaya Sewa: Rp 5.000.000/hari</li>
+                </ul>
+                <a href="transaksi.html?mobil=McLaren%20720S&kategori=Sport&biaya=5000000" class="w3-button w3-black">Sewa</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/mclaren2.webp" alt="McLaren GT" style="width:100%">
+            <div class="w3-container">
+                <h3>McLaren GT</h3>
+                <p>Spesifikasi:</p>
+                <ul>
+                    <li>Mesin: 4.0L V8 Twin-Turbo</li>
+                    <li>Daya: 620 hp</li>
+                    <li>0-100 km/h: 3.1 detik</li>
+                    <li>Biaya Sewa: Rp 5.000.000/hari</li>
+                </ul>
+                <a href="transaksi.html?mobil=McLaren%20GT&kategori=Sport&biaya=5000000" class="w3-button w3-black">Sewa</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/mclaren3.webp" alt="McLaren Artura" style="width:100%">
+            <div class="w3-container">
+                <h3>McLaren Artura</h3>
+                <p>Spesifikasi:</p>
+                <ul>
+                    <li>Mesin: 3.0L V6 Twin-Turbo</li>
+                    <li>Daya: 671 hp</li>
+                    <li>0-100 km/h: 3.0 detik</li>
+                    <li>Biaya Sewa: Rp 5.000.000/hari</li>
+                </ul>
+                <a href="transaksi.html?mobil=McLaren%20Artura&kategori=Sport&biaya=5000000" class="w3-button w3-black">Sewa</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/mclaren4.webp" alt="McLaren 570S" style="width:100%">
+            <div class="w3-container">
+                <h3>McLaren 570S</h3>
+                <p>Spesifikasi:</p>
+                <ul>
+                    <li>Mesin: 3.8L V8 Twin-Turbo</li>
+                    <li>Daya: 570 hp</li>
+                    <li>0-100 km/h: 3.1 detik</li>
+                    <li>Biaya Sewa: Rp 5.000.000/hari</li>
+                </ul>
+                <a href="transaksi.html?mobil=McLaren%20570S&kategori=Sport&biaya=5000000" class="w3-button w3-black">Sewa</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/mclaren5.webp" alt="McLaren 600LT" style="width:100%">
+            <div class="w3-container">
+                <h3>McLaren 600LT</h3>
+                <p>Spesifikasi:</p>
+                <ul>
+                    <li>Mesin: 3.8L V8 Twin-Turbo</li>
+                    <li>Daya: 592 hp</li>
+                    <li>0-100 km/h: 2.9 detik</li>
+                    <li>Biaya Sewa: Rp 5.000.000/hari</li>
+                </ul>
+                <a href="transaksi.html?mobil=McLaren%20LT&kategori=Sport&biaya=5000000" class="w3-button w3-black">Sewa</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/mclaren6.webp" alt="McLaren P1" style="width:100%">
+            <div class="w3-container">
+                <h3>McLaren P1</h3>
+                <p>Spesifikasi:</p>
+                <ul>
+                    <li>Mesin: 3.8L V8 Twin-Turbo + Motor Listrik</li>
+                    <li>Daya: 903 hp</li>
+                    <li>0-100 km/h: 2.8 detik</li>
+                    <li>Biaya Sewa: Rp 5.000.000/hari</li>
+                </ul>
+                <a href="transaksi.html?mobil=McLaren%20P1&kategori=Sport&biaya=5000000" class="w3-button w3-black">Sewa</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="w3-row-padding w3-padding-32 w3-gray">
+        <div class="w3-third">
+            <h3><img src="img/favicon32.png"> UNPAM Car</h3>
+            <p>Gedung Kampus Universitas Pamulang.</p>
+            <p>Jl. Suryakencana No.1, Pamulang Barat</p>
+            <p>Solution Center <a href="customerservice.html">Customer Service</a></p>
+        </div>
+
+        <div class="w3-third">
+            <h3>Pusat Bantuan</h3>
+            <p>FAQ</p>
+            <p><a href="lokasi.html">Lokasi Kami</a></p>
+            <p><a href="customerservice.html">Hubungi Kami</a></p>
+        </div>
+
+        <div class="w3-third">
+            <h3>Ikuti Kami</h3>
+            <p><a href="https://www.facebook.com/UNPAM.ID/?locale=id_ID" target="_blank">Facebook</a></p>
+            <p><a href="https://www.instagram.com/universitas_pamulang/?hl=en" target="_blank">Instagram</a></p>
+            <p><a href="https://x.com/unpamfess_?mx=2" target="_blank">Twitter</a></p>
+        </div>
+
+          <!-- Bagian Copyright -->
+<div class="w3-container w3-padding-4 w3-center">
+    <p>&copy; 2024 Isykariman B.</p>
+</div>
+    </footer>
+
+<!-- End page content -->
+</div>
+
+<script src="script.js">
+// Script to open and close sidebar
+</script>
+
+<script src="etalase.js">
+    //Script dietalase saja
+    </script>
+</body>
+</html>
